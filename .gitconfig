@@ -1,0 +1,23 @@
+[alias]
+    br = branch                                                                                                                                                                                                                     
+    co = checkout
+    cob = checkout -b
+    com = checkout master
+    commi = commit
+    comit = commit
+    idff = diff
+    po = push origin
+    poh = push origin head
+    psuh = push
+    rb = rebase
+    rbi = rebase -i
+    rbm = rebase master
+    satus = status
+    staus = status
+[user]
+    name = Harvey
+    email = cheng.bolong@gmail.com
+[core]
+    editor = vim
+[grep]
+    lineNumber = true
