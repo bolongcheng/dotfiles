@@ -41,3 +41,10 @@ PS1+='$(print_git_branch)'
 PS1+='$PR_CYAN%~$PR_NO_COLOR'
 PS1+='] '
 RPS1='$PR_MAGENTA(%D{%b %d %H:%M})$PR_NO_COLOR'
+
+# Display directoy name in iterm tabs
+if [ $ITERM_SESSION_ID ]; then
+precmd() {
+  echo -ne "\033]0;${PWD##*/}\007"
+}
+fi
